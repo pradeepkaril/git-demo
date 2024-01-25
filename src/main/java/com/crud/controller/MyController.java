@@ -6,9 +6,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MyController {
-	@GetMapping
+	@GetMapping("/1api")
 	@ResponseBody
-	public String HealthCheck() {
-		return "All are ok";
+	public String HealthCheck1() {
+		return "All are ok 1";
+	}
+	
+	@GetMapping("/2api")
+	@ResponseBody
+	public String HealthCheck2() {
+		return "All are ok 2";
 	}
 }
